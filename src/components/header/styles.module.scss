@@ -1,0 +1,14 @@
+.linkButton {
+  &:hover {
+    .arrowIcon {
+      transform: translateX(3px);
+      -webkit-transform: translateX(3px);
+      -moz-transform: translateX(3px);
+      -ms-transform: translateX(3px);
+      -o-transform: translateX(3px);
+    }
+  }
+  .arrowIcon {
+    margin-inline-start: 1rem;
+  }
+}

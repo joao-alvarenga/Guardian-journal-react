@@ -2,12 +2,12 @@ import React from "react";
 import { SecondaryButton } from "./Button.styles";
 import styles from "./styles.module.scss";
 
-const Button = ({ children, style, type, onClick, href, to }) => {
+const Button = ({ children, style, type, onClick, href, className, to }) => {
   switch (type) {
     case "link":
       return (
         <a
-          className={styles.alink}
+          className={`${styles.alink} ${className || ""}`}
           style={style}
           rel="noopener noreferrer"
           target="_blank"
