@@ -42,7 +42,7 @@ export const LogoContainer = styled.div`
 
 export const Nav = styled.div`
   display: flex;
-  width: 85%;
+  width: 90%;
   height: 4.5rem;
   border: 1px solid #506991;
   border-bottom: none;
@@ -50,23 +50,25 @@ export const Nav = styled.div`
 
   ul {
     list-style: none;
+    width: 100%;
     /* display: flex; */
     /* align-items: center;
     gap: 8rem; */
   }
 
-  ul:first-of-type {
+  /* ul:first-of-type {
     padding-left: 0.8rem;
-  }
+  } */
 
   li {
     font-size: 2.1rem;
     font-weight: 900;
     float: left;
     display: block;
-    width: 13vw;
+    width: 16.5rem;
     display: flex;
     position: relative;
+    cursor: pointer;
   }
 
   li:not(:first-child):before {
