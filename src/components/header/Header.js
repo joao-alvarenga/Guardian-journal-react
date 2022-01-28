@@ -8,7 +8,7 @@ import styles from "./styles.module.scss";
 // Images
 import LogoImage from "../../images/TheGuardianLogo.png";
 // Links
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -48,29 +48,50 @@ const Header = () => {
           <nav>
             <ul>
               <li>
-                <Link className={styles.navLink} to="">
+                <NavLink
+                  exact
+                  activeClassName={styles.active}
+                  className={styles.navLink}
+                  to="/"
+                >
                   News
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link className={styles.navLink} to="">
+                <NavLink
+                  activeClassName={styles.active}
+                  className={styles.navLink}
+                  to="/opinion"
+                >
                   Opinion
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link className={styles.navLink} to="">
+                <NavLink
+                  activeClassName={styles.active}
+                  className={styles.navLink}
+                  to="/sport"
+                >
                   Sport
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link className={styles.navLink} to="">
+                <NavLink
+                  activeClassName={styles.active}
+                  className={styles.navLink}
+                  to="/culture"
+                >
                   Culture
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link className={styles.navLink} to="">
+                <NavLink
+                  activeClassName={styles.active}
+                  className={styles.navLink}
+                  to="/lifestyle"
+                >
                   Lifestyle
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </nav>

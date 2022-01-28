@@ -11,7 +11,7 @@ export const MainHeader = styled.header`
 `;
 
 export const HeaderWrap = styled.div`
-  width: 85%;
+  width: 87%;
   height: 80%;
   position: relative;
   display: flex;
@@ -43,7 +43,7 @@ export const LogoContainer = styled.div`
 export const Nav = styled.div`
   display: flex;
   width: 90%;
-  height: 4.5rem;
+  height: 4.3rem;
   border: 1px solid #506991;
   border-bottom: none;
   margin-top: auto;
@@ -51,14 +51,9 @@ export const Nav = styled.div`
   ul {
     list-style: none;
     width: 100%;
-    /* display: flex; */
-    /* align-items: center;
-    gap: 8rem; */
+    height: 100%;
+    position: relative;
   }
-
-  /* ul:first-of-type {
-    padding-left: 0.8rem;
-  } */
 
   li {
     font-size: 2.1rem;
@@ -66,6 +61,7 @@ export const Nav = styled.div`
     float: left;
     display: block;
     width: 16.5rem;
+    height: 100%;
     display: flex;
     position: relative;
     cursor: pointer;
@@ -75,6 +71,6 @@ export const Nav = styled.div`
     content: "";
     position: absolute;
     border-left: 1px solid #506991;
-    height: 83%;
+    height: 65%;
   }
 `;
