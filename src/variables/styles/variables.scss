@@ -1,0 +1,12 @@
+@mixin afterHover {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 100%;
+  transition: 300ms ease-in-out;
+  -webkit-transition: 300ms ease-in-out;
+  -moz-transition: 300ms ease-in-out;
+  -ms-transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
+  background-color: var(--background-color);
+}

@@ -2,7 +2,7 @@ import React from "react";
 import { createGlobalStyle } from "styled-components";
 // Router
 import { Switch, Route } from "react-router-dom";
-import Home from "./pages/home/Home";
+import Home from "./pages/home/index";
 
 const GlobalStyle = createGlobalStyle`  
 *,

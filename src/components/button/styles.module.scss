@@ -1,6 +1,8 @@
+@import "../../variables/styles/colors.scss";
+
 .alink {
-  background-color: rgb(255, 229, 0);
-  color: #052962;
+  background-color: $mainYellow;
+  color: $mainColor;
   display: inline-flex;
   justify-content: center;
   align-items: center;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../variables/styles/colors.theme";
 
 export const MainHeader = styled.header`
   width: 100%;
@@ -7,7 +8,7 @@ export const MainHeader = styled.header`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #052962;
+  background-color: ${theme.mainColor};
 `;
 
 export const HeaderWrap = styled.div`
@@ -18,13 +19,13 @@ export const HeaderWrap = styled.div`
   h2 {
     font-size: 3.4rem;
     font-weight: 900;
-    color: rgb(255, 229, 0);
+    color: ${theme.mainYellow};
   }
 
   h4 {
     font-size: 1.7rem;
     font-weight: 600;
-    color: #ffffff;
+    color: ${theme.mainWhite};
     margin-block-start: 0.31rem;
     font-family: "Open Sans", sans-serif;
   }
@@ -44,7 +45,7 @@ export const Nav = styled.div`
   display: flex;
   width: 90%;
   height: 4.3rem;
-  border: 1px solid #506991;
+  border: 1px solid ${theme.borderColor};
   border-bottom: none;
   margin-top: auto;
 
@@ -70,7 +71,7 @@ export const Nav = styled.div`
   li:not(:first-child):before {
     content: "";
     position: absolute;
-    border-left: 1px solid #506991;
+    border-left: 1px solid ${theme.borderColor};
     height: 65%;
   }
 `;

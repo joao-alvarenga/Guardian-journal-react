@@ -1,5 +1,5 @@
 import React from "react";
-import { SecondaryButton } from "./Button.styles";
+import { SecondaryButton } from "./Element.styles";
 import styles from "./styles.module.scss";
 
 const Button = ({ children, style, type, onClick, href, className, to }) => {

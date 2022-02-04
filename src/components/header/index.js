@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "../button/Button";
-import { MainHeader, HeaderWrap, LogoContainer, Nav } from "./Header.styles";
+import Button from "../button";
+import { MainHeader, HeaderWrap, LogoContainer, Nav } from "./Element.styles";
 // Icons
 import { AiOutlineArrowRight } from "react-icons/ai";
 // SCSS modules

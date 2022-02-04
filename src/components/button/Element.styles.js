@@ -1,9 +1,10 @@
 import styled from "styled-components";
+// import { theme } from "../../variables/styles/colors.theme";
 
 // export const PrimaryButton = styled.a`
 //   /* background-color: ${(props) => props.backgroundColor}; */
-//   background-color: rgb(255, 229, 0);
-//   color: #052962;
+//   background-color: ${theme.mainYellow};
+//   color: ${theme.mainColor};
 //   display: inline-block;
 //   width: auto;
 //   outline: none;

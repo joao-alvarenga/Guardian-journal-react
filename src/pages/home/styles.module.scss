@@ -1,0 +1,42 @@
+@import "../../variables/styles/colors.scss";
+
+.horizontalLn,
+.multiline {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #dcdcdc,
+    #dcdcdc 0.0625rem,
+    transparent 0.0625rem,
+    transparent 0.25rem
+  );
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 0.0625rem 0.8125rem;
+  background-color: #ffffff;
+  content: "";
+  display: block;
+  height: 0.9125rem;
+
+  &::after {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      #dcdcdc,
+      #dcdcdc 0.0625rem,
+      transparent 0.0625rem,
+      transparent 0.25rem
+    );
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 0.0625rem 0.8125rem;
+    background-color: #ffffff;
+    content: "";
+    display: block;
+    height: 0.9125rem;
+  }
+  //   content: "";
+  //   position: absolute;
+  //   top: 2.5px;
+  //   width: 100%;
+  //   border-top: 1px solid $borderColor;
+  // }
+}
