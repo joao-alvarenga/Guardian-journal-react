@@ -32,9 +32,7 @@ export const HeaderWrap = styled.div`
 `;
 
 export const LogoContainer = styled.div`
-  /* position: absolute; */
-  /* right: 3rem; */
-  margin-left: auto;
+  /* margin-left: auto; */
   margin-top: 1rem;
   background-size: cover;
   object-fit: cover;
@@ -73,5 +71,57 @@ export const Nav = styled.div`
     position: absolute;
     border-left: 1px solid ${theme.borderColor};
     height: 65%;
+  }
+`;
+
+export const TopBarContainer = styled.div`
+  height: auto;
+  position: relative;
+  padding-top: 1rem;
+  margin-left: auto;
+  margin-right: -3.7rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+  .topBarLink {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    z-index: 10;
+
+    &:hover {
+      color: ${theme.mainYellow};
+
+      .ArrowIcon {
+        transform: translateY(2px);
+      }
+    }
+  }
+
+  .topBarLink:first-of-type {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 27px;
+      top: 0;
+      left: -7px;
+      border-left: 1px solid ${theme.borderColor};
+    }
+  }
+
+  .topBarIcons {
+    font-size: 2rem;
+    margin-right: 3px;
+  }
+
+  .ArrowIcon {
+    font-size: 1.5rem;
+    transition: 300ms;
   }
 `;

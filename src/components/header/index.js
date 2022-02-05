@@ -1,14 +1,23 @@
 import React from "react";
 import Button from "../button";
-import { MainHeader, HeaderWrap, LogoContainer, Nav } from "./Element.styles";
+import {
+  MainHeader,
+  HeaderWrap,
+  LogoContainer,
+  Nav,
+  TopBarContainer,
+} from "./Element.styles";
 // Icons
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineSearch } from "react-icons/ai";
+import { FaUserCircle } from "react-icons/fa";
+import { RiArrowDownSLine } from "react-icons/ri";
 // SCSS modules
 import styles from "./styles.module.scss";
 // Images
 import LogoImage from "../../images/TheGuardianLogo.png";
 // Links
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -36,6 +45,21 @@ const Header = () => {
               </Button>
             </div>
           </div>
+          <TopBarContainer>
+            <Link className="topBarLink">
+              <span>
+                <FaUserCircle className="topBarIcons" />
+              </span>
+              Sign In
+            </Link>
+            <Link className="topBarLink">
+              <span>
+                <AiOutlineSearch className="topBarIcons" />
+              </span>
+              Search
+              <mdMdOutlineKeyboardArrowDown className="ArrowIcon" />
+            </Link>
+          </TopBarContainer>
           <LogoContainer>
             <img
               src={LogoImage}

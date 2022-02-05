@@ -1,8 +1,9 @@
 import React from "react";
 // import components
 import Header from "../../components/header";
+import Headline from "../../components/newsGrid";
 // import style js and scss
-import { HomeContainer } from "./Element.style";
+import { HomeContainer, MainSection } from "./Element.style";
 import styles from "./styles.module.scss";
 // import helmet lib
 import { Helmet } from "react-helmet";
@@ -34,12 +35,14 @@ const Home = () => {
         />
       </Helmet>
       {/* Head */}
-
       <Header />
       <HomeContainer>
         <div className={styles.multiline}>
           <div className={styles.horizontalLn}></div>
         </div>
+        <MainSection>
+          <Headline>Headlines</Headline>
+        </MainSection>
       </HomeContainer>
     </>
   );
