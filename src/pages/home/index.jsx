@@ -1,25 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+// Axios
+import axios from "axios";
 // import components
 import Header from "../../components/header";
-import Headline from "../../components/newsGrid";
+import Headline from "../../components/headline";
 // import style js and scss
 import { HomeContainer, MainSection } from "./Element.style";
 import styles from "./styles.module.scss";
 // import helmet lib
 import { Helmet } from "react-helmet";
-// import Api key
+// import Api key and Api endpoints
 import { Api } from "../../enviroment/index";
 import { Url } from "../../enviroment/index";
-import { UrlSection } from "../../enviroment/index";
-import { UrlSearch } from "../../enviroment/index";
-
-// const page = () => {
-
-// }
-
-// console.log("here", `${Api}`);
+import MainContainer from "../../components/wrapper";
 
 const Home = () => {
+  const [error, setError] = useState(null);
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    axios
+      .get(`${Url + Api}`)
+      .then((response) => {
+        if (response.data) {
+          setData(response.data);
+        }
+      })
+      .catch((error) => {
+        console.error("error", error);
+        setError(error);
+      })
+      .finally(() => {
+        console.log("loading");
+        setLoading(false);
+      });
+  }, []);
+
   return (
     <>
       {/* Head */}
@@ -36,14 +53,14 @@ const Home = () => {
       </Helmet>
       {/* Head */}
       <Header />
-      <HomeContainer>
+      <MainContainer>
         <div className={styles.multiline}>
           <div className={styles.horizontalLn}></div>
         </div>
         <MainSection>
           <Headline>Headlines</Headline>
         </MainSection>
-      </HomeContainer>
+      </MainContainer>
     </>
   );
 };

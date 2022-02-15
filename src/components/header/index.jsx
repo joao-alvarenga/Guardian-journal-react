@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../button";
+// styled components
 import {
   MainHeader,
   HeaderWrap,
@@ -57,7 +58,7 @@ const Header = () => {
                 <AiOutlineSearch className="topBarIcons" />
               </span>
               Search
-              <mdMdOutlineKeyboardArrowDown className="ArrowIcon" />
+              <RiArrowDownSLine className="ArrowIcon" />
             </Link>
           </TopBarContainer>
           <LogoContainer>

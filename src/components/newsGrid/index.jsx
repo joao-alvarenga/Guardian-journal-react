@@ -1,6 +1,7 @@
 import React from "react";
+// styled components
 
-const Headline = ({ children }) => {
+const NewsGrid = ({ children }) => {
   return (
     <div>
       <h2>{children}</h2>
@@ -8,4 +9,4 @@ const Headline = ({ children }) => {
   );
 };
 
-export default Headline;
+export default NewsGrid;
